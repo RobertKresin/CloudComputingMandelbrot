@@ -18,7 +18,7 @@ public class mandelbrot extends JComponent implements ActionListener{
 	
 	public static final int WIDTH = 800;
 	public static final int HEIGHT = 600;
-	public static final int ITERATIONS = 100;
+	public static final int ITERATIONS = 1000000;
 	public static final float SCALE = 250;
 	
 	private float hueOffset = 0;
@@ -88,7 +88,7 @@ public class mandelbrot extends JComponent implements ActionListener{
 		g.drawImage(buffer, 0, 0, null);
 	}
 
-	@Override
+	
 	public void actionPerformed(ActionEvent e) {
 		
 		hueOffset += 0.01f;
